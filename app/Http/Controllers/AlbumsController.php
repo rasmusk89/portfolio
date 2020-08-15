@@ -13,8 +13,13 @@ class AlbumsController extends Controller
     }
 
     public function albums() {
-        $title = 'Albums';
-        return view('gallery.albums')->with('title', $title);
+        $data = [
+            'title' => 'Albums',
+            'albums' => Album::with('Photos')->get()
+        ];
+//        $title = 'Albums';
+//        $album = Album::with('Photos')->get();
+        return view('gallery.albums')->with($data);
     }
 
     public function create() {
@@ -44,5 +49,10 @@ class AlbumsController extends Controller
         $album->save();
 
         return redirect('gallery/albums')->with('success', 'Album created');
+    }
+
+    public function show($id) {
+        $album = Album::with('Photos')->find($id);
+        return view('/gallery/albums.show')->with('album', $album);
     }
 }

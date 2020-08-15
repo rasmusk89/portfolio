@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('gallery.include.navbar')
+    <a class="btn btn-dark" href="/gallery" role="button">Go back</a>
+    <hr>
     <div class="container">
         @include('gallery.include.messages')
     </div>

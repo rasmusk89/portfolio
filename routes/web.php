@@ -33,3 +33,9 @@ Route::post('gallery/store', 'AlbumsController@store');
 
 Route::get('gallery/albums', 'AlbumsController@albums');
 
+Route::get('gallery/albums/{id}', 'AlbumsController@show');
+
+Route::get('gallery/photos/create/{id}', 'PhotosController@create');
+
+Route::post('gallery/photos/store', 'PhotosController@store');
+
