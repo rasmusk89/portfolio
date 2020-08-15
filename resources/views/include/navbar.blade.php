@@ -17,7 +17,7 @@
                     Projects
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Photo gallery</a>
+                    <a class="dropdown-item" href="/gallery">Photo gallery</a>
                     <a class="dropdown-item" href="#">Contact book</a>
                     <a class="dropdown-item" href="#">REST API</a>
                     <a class="dropdown-item" target="_blank" href="//rasmusk.ee/wordpress/">API (external link)</a>

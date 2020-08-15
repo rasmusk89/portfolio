@@ -25,3 +25,11 @@ Route::get('/contact', 'PagesController@contact');
 
 Route::get('/projects', 'PagesController@projects');
 
+Route::get('/gallery', 'AlbumsController@index');
+
+Route::get('/gallery/create', 'AlbumsController@create');
+
+Route::post('gallery/store', 'AlbumsController@store');
+
+Route::get('gallery/albums', 'AlbumsController@albums');
+
