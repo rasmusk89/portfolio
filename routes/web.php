@@ -39,3 +39,10 @@ Route::get('gallery/photos/create/{id}', 'PhotosController@create');
 
 Route::post('gallery/photos/store', 'PhotosController@store');
 
+Route::get('gallery/photos/{id}', 'PhotosController@show');
+
+Route::delete('gallery/photos/{id}', 'PhotosController@destroy');
+
+Route::get('productapi', 'PagesController@productAPI');
+
+Route::get('wordpress', 'PagesController@wordpress');

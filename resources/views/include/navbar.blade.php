@@ -18,10 +18,8 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="/gallery">Photo gallery</a>
-                    <a class="dropdown-item" href="#">Contact book</a>
-                    <a class="dropdown-item" href="#">REST API</a>
-                    <a class="dropdown-item" target="_blank" href="//rasmusk.ee/wordpress/">API (external link)</a>
-                    <a class="dropdown-item" href="#">VUE.JS</a>
+                    <a class="dropdown-item" href="/productapi">Products API</a>
+                    <a class="dropdown-item" href="/wordpress">Wordpress Page</a>
                 </div>
             </div>
         </ul>

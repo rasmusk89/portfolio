@@ -28,4 +28,12 @@ class PagesController extends Controller
         ];
         return view('pages.projects')->with($data);
     }
+
+    public function productAPI() {
+        return view('productapi.index');
+    }
+
+    public function wordpress() {
+        return view('wordpress.index');
+    }
 }
