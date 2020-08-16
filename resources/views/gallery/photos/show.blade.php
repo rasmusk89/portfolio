@@ -2,7 +2,7 @@
 
 @section('content')
     @include('gallery.include.auth')
-    <a class="btn btn-dark" href="/gallery/albums/{{$photo->album_id}}" role="button">Go back</a>
+    <a class="btn btn-dark" href="/gallery/albums/{{$photo->album_id}}" role="button">{{__('messages.go_back')}}</a>
     <hr>
 
     <h3>{{$photo->title}}</h3>

@@ -2,7 +2,7 @@
 
 @section('content')
     @include('gallery.include.auth')
-    <a class="btn btn-dark" href="/gallery/albums" role="button">Go back</a>
+    <a class="btn btn-dark" href="/gallery/albums" role="button">{{__('messages.go_back')}}</a>
     <hr>
     @include('gallery.include.messages')
     <h1>{{$album->name}}</h1>
@@ -46,12 +46,12 @@
         </div>
     @else
         <div>
-            <p><strong>No photos to display</strong></p>
+            <p><strong>{{__('messages.no_photos')}}</strong></p>
         </div>
     @endif
     @if (Auth::check())
-        <a class="btn btn-primary" href="/gallery/photos/create/{{$album->id}}">Upload a photo</a>
+        <a class="btn btn-primary" href="/gallery/photos/create/{{$album->id}}">{{__('messages.upload_photo')}}</a>
     @else
-        <p><em> Log in to upload an image!*</em></p>
+        <p><em> {{__('messages.login_to_upload_image')}}!*</em></p>
     @endif
 @endsection

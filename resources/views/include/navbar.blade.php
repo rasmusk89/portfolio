@@ -10,9 +10,9 @@
 
             <h4>{{__('messages.projects')}}:</h4>
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item m-1"><a class="nav-link" href="/gallery">&nbsp;&nbsp;Photo gallery</a></li>
-                <li class="nav-item m-1"><a class="nav-link" href="/productapi">&nbsp;&nbsp;Products API</a></li>
-                <li class="nav-item m-1"><a class="nav-link" href="/wordpress">&nbsp;&nbsp;Wordpress Page</a></li>
+                <li class="nav-item m-1"><a class="nav-link" href="/gallery">&nbsp;&nbsp;{{__('messages.photo_gallery')}}</a></li>
+                <li class="nav-item m-1"><a class="nav-link" href="/productapi">&nbsp;&nbsp;{{__('messages.product_api')}}</a></li>
+                <li class="nav-item m-1"><a class="nav-link" href="/wordpress">&nbsp;&nbsp;{{__('messages.wordpress')}}</a></li>
             </ul>
         </div>
     </div>
@@ -34,16 +34,18 @@
                     {{__('messages.projects')}}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/gallery">Photo gallery</a>
-                    <a class="dropdown-item" href="/productapi">Products API</a>
-                    <a class="dropdown-item" href="/wordpress">Wordpress Page</a>
+                    <a class="dropdown-item" href="/gallery">{{__('messages.photo_gallery')}}</a>
+                    <a class="dropdown-item" href="/productapi">{{__('messages.product_api')}}</a>
+                    <a class="dropdown-item" href="/wordpress">{{__('messages.wordpress')}}</a>
                 </div>
             </div>
         </ul>
     </div>
-    <div class="justify-content-end">
-        <a href="lang/en"><div class="btn btn-light">EN</div></a>
-        <a href="lang/et"><div class="btn btn-light">ET</div></a>
+    <div class="">
+        <div class="justify-content-end">
+            <a href="/lang/en"><div class="btn btn-sm btn-light ">{{__('messages.english')}}</div></a>
+            <a href="/lang/et"><div class="btn btn-sm btn-light">{{__('messages.estonian')}}</div></a>
+        </div>
     </div>
 </nav>
 <br>

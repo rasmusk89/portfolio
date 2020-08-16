@@ -2,7 +2,7 @@
 
 @section('content')
     @include('gallery.include.auth')
-    <a class="btn btn-dark" href="/gallery" role="button">Go back</a>
+    <a class="btn btn-dark" href="/gallery" role="button">{{__('messages.go_back')}}</a>
     <hr>
     <div class="container">
         @include('gallery.include.messages')

@@ -25,14 +25,6 @@ class PagesController extends Controller
         return view('pages.contact')->with('title', $title);
     }
 
-    public function projects() {
-        $data = [
-            'title' => __('messages.contact_me'),
-            'projects' => ['Contact Book', 'REST API', 'VUE.JS']
-        ];
-        return view('pages.projects')->with($data);
-    }
-
     public function productAPI() {
         return view('productapi.index');
     }

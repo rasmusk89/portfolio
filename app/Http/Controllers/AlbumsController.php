@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class AlbumsController extends Controller
 {
     public function index() {
-        $title = 'Photo gallery';
+        $title = __('messages.photo_gallery');
         return view('gallery.index')->with('title', $title);
     }
 
     public function albums() {
         $data = [
-            'title' => 'Albums',
+            'title' => __('messages.albums'),
             'albums' => Album::with('Photos')->get()
         ];
 //        $title = 'Albums';
@@ -23,7 +23,7 @@ class AlbumsController extends Controller
     }
 
     public function create() {
-        $title = 'Create album';
+        $title = __('messages.create_album');
         return view('gallery.create')->with('title', $title);
     }
 
