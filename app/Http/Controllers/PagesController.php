@@ -7,23 +7,27 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index() {
-        $title = 'This is my laravel projects page';
-        return view('pages.index')->with('title', $title);
+        $data = [
+            'title' => __('messages.welcome'),
+            'description' => __('messages.page_description')
+
+        ];
+        return view('pages.index')->with($data);
     }
 
     public function about() {
-        $title = 'About me';
+        $title = __('messages.about_me');
         return view('pages.about')->with('title', $title);
     }
 
     public function contact() {
-        $title = 'Contact me';
+        $title = __('messages.contact_me');
         return view('pages.contact')->with('title', $title);
     }
 
     public function projects() {
         $data = [
-            'title' => 'Projects',
+            'title' => __('messages.contact_me'),
             'projects' => ['Contact Book', 'REST API', 'VUE.JS']
         ];
         return view('pages.projects')->with($data);

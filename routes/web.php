@@ -37,4 +37,9 @@ Route::delete('gallery/photos/{id}', 'PhotosController@destroy');
 // Authentication controller
 Auth::routes();
 Route::get('logout', 'Auth\LoginController@logout');
-//Route::get('/gallery', 'HomeController@index');
+
+// Localization
+Route::get('lang/{locale}', function ($locale) {
+   session()->put('locale', $locale);
+   return redirect()->back();
+});
