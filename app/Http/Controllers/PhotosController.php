@@ -33,6 +33,7 @@ class PhotosController extends Controller
         $photo->title = $request->input('title');
         $photo->size = $request->file('photo')->getSize();
         $photo->photo = $fileNameToStore;
+        $photo->user_id = auth()->user()->id;
         $photo->save();
 
         return redirect('gallery/albums/' . $request->input('album_id'))->with('success', 'Photo uploaded');
@@ -49,7 +50,7 @@ class PhotosController extends Controller
         if (Storage::delete('public/photos/'.$photo->album_id.'/'.$photo->photo)) {
             $photo->delete();
 
-            return redirect('/gallery/albums')->with('success', 'Photo deleted');
+            return redirect('/gallery/albums/'.$photo->album_id)->with('success', 'Photo deleted');
         }
     }
 

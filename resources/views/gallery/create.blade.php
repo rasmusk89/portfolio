@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('gallery.include.auth')
     <a class="btn btn-dark" href="/gallery" role="button">Go back</a>
     <hr>
     <div class="container">

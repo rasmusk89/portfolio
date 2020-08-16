@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('gallery.include.auth')
     <a class="btn btn-dark" href="/gallery/albums/{{$photo->album_id}}" role="button">Go back</a>
     <hr>
 
@@ -10,12 +11,16 @@
     <img src="{{ URL::asset("storage/photos/{$photo->album_id}/{$photo->photo}") }}" alt="{{$photo->title}}">
     <br><br>
 
-    {!! Form::open(['action' => ['PhotosController@destroy', $photo->id], ',method' => 'POST']) !!}
+    @if (! Auth::guest())
+        @if ($photo->user_id == Auth::user()->id)
+            {!! Form::open(['action' => ['PhotosController@destroy', $photo->id], ',method' => 'POST']) !!}
 
-        {{Form::hidden('_method', 'DELETE')}}
-        {{Form::submit('Delete photo', ['class' => 'btn btn-danger'])}}
+            {{Form::hidden('_method', 'DELETE')}}
+            {{Form::submit('Delete photo', ['class' => 'btn btn-danger'])}}
 
-    {!! Form::close() !!}
+            {!! Form::close() !!}
+        @endif
+    @endif
     <small>Size: {{$photo->size}}</small>
 
 @endsection
