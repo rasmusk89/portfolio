@@ -16,11 +16,11 @@
             {!! Form::open(['action' => ['PhotosController@destroy', $photo->id], ',method' => 'POST']) !!}
 
             {{Form::hidden('_method', 'DELETE')}}
-            {{Form::submit('Delete photo', ['class' => 'btn btn-danger'])}}
+            {{Form::submit(__('messages.delete_photo'), ['class' => 'btn btn-danger'])}}
 
             {!! Form::close() !!}
         @endif
     @endif
-    <small>Size: {{$photo->size}}</small>
+    <small>{{__('messages.size')}}: {{$photo->size}}</small>
 
 @endsection

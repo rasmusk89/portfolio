@@ -32,4 +32,9 @@ class PagesController extends Controller
     public function wordpress() {
         return view('wordpress.index');
     }
+
+    public function projects() {
+        $title = __('messages.projects');
+        return view('pages.projects')->with('title', $title);
+    }
 }

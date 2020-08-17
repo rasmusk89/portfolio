@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">{{__('messages.home')}}</a>
+    <a class="ml-4 navbar-brand" href="/"><strong>{{__('messages.home')}}</strong></a>
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
             <ul class="navbar-nav mr-auto">
@@ -22,7 +22,7 @@
 
 
     <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto ">
             <li class="nav-item m-1">
                 <a class="nav-link" href="/about">{{__('messages.about')}}</a>
             </li>
@@ -41,10 +41,16 @@
             </div>
         </ul>
     </div>
-    <div class="">
-        <div class="justify-content-end">
-            <a href="/lang/en"><div class="btn btn-sm btn-light ">{{__('messages.english')}}</div></a>
-            <a href="/lang/et"><div class="btn btn-sm btn-light">{{__('messages.estonian')}}</div></a>
+    <div class="dropdown mr-5">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{__('messages.selected_language')}}
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a href="/lang/en"><div class="dropdown-item btn btn-sm btn-light">
+                    <img class="mr-1" src="/storage/flags/engFlag.png" alt="English flag" height="20px"><strong>ENG</strong> | {{__('messages.eng')}}</div></a>
+            <div class="dropdown-divider"></div>
+            <a href="/lang/et"><div class="dropdown-item btn btn-sm btn-light">
+                    <img class="mr-1" src="/storage/flags/estFlag.png" alt="Estonian flag"height="20px"><strong>EST</strong> | {{__('messages.est')}}</div></a>
         </div>
     </div>
 </nav>

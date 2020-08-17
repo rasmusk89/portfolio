@@ -48,7 +48,7 @@ class AlbumsController extends Controller
         $album->cover_image = $fileNameToStore;
         $album->save();
 
-        return redirect('gallery/albums')->with('success', 'Album created');
+        return redirect('gallery/albums')->with('success', __('messages.album_created') . '!');
     }
 
     public function show($id) {

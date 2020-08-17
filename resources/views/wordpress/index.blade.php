@@ -3,6 +3,7 @@
 @section('content')
     <div class="jumbotron text-center">
         <h1>Wordpress page</h1>
-        <a href="//rasmusk.ee/wordpress" class="text-decoration-none"><div class="btn btn-dark">Go to..</div></a>
+        <p>description of work</p>
+        <a href="//rasmusk.ee/wordpress" target="_blank" class="text-decoration-none"><div class="btn btn-dark">{{__('messages.go_to')}}</div></a>
     </div>
 @endsection
