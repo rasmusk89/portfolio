@@ -37,4 +37,9 @@ class PagesController extends Controller
         $title = __('messages.projects');
         return view('pages.projects')->with('title', $title);
     }
+
+    public function contacts() {
+        $title = __('contacts.title');
+        return view('contacts.index')->with('title', $title);
+    }
 }

@@ -12,7 +12,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item m-1"><a class="nav-link" href="/gallery">&nbsp;&nbsp;{{__('messages.photo_gallery')}}</a></li>
                 <li class="nav-item m-1"><a class="nav-link" href="/productapi">&nbsp;&nbsp;{{__('messages.product_api')}}</a></li>
-                <li class="nav-item m-1"><a class="nav-link" href="/wordpress">&nbsp;&nbsp;{{__('messages.wordpress')}}</a></li>
+                <li class="nav-item m-1"><a class="nav-link" href="/contacts">&nbsp;&nbsp;{{__('Contact Book')}}</a></li>
             </ul>
         </div>
     </div>
@@ -36,7 +36,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="/gallery">{{__('messages.photo_gallery')}}</a>
                     <a class="dropdown-item" href="/productapi">{{__('messages.product_api')}}</a>
-                    <a class="dropdown-item" href="/wordpress">{{__('messages.wordpress')}}</a>
+                    <a class="dropdown-item" href="/contacts">{{__('Contact Book')}}</a>
                 </div>
             </div>
         </ul>

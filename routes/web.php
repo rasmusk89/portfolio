@@ -20,6 +20,7 @@ Route::get('/contact', 'PagesController@contact');
 Route::get('/projects', 'PagesController@projects');
 Route::get('productapi', 'PagesController@productAPI');
 Route::get('wordpress', 'PagesController@wordpress');
+Route::get('contacts', 'PagesController@contacts');
 
 // Albums controller
 Route::get('/gallery', 'AlbumsController@index');
