@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <a class="btn btn-dark" href="/projects" role="button">{{__('messages.go_back')}}</a>
+    <hr>
     @include('gallery.include.auth')
     <div class="jumbotron text-center">
         <h1>{{__('messages.photo_gallery')}}</h1>

@@ -29,16 +29,16 @@
             <li class="nav-item m-1">
                 <a class="nav-link" href="/contact">{{__('messages.contact')}}</a>
             </li>
-            <div class="dropdown m-1">
+            <div class="dropdown mt-2">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{__('messages.projects')}}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/projects">{{__('messages.projects')}}</a>
+                    <a class="dropdown-item" href="/projects"><strong>{{__('messages.projects')}}</strong></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/gallery">{{__('messages.photo_gallery')}}</a>
-                    <a class="dropdown-item" href="/productapi">{{__('messages.product_api')}}</a>
-                    <a class="dropdown-item" href="/contacts">{{__('Contact Book')}}</a>
+                    <a class="dropdown-item" href="/gallery">&bull;&nbsp;&nbsp;{{__('messages.photo_gallery')}}</a>
+                    <a class="dropdown-item" href="/productapi">&bull;&nbsp;&nbsp;{{__('messages.product_api')}}</a>
+                    <a class="dropdown-item" href="/contacts">&bull;&nbsp;&nbsp;{{__('Contact Book')}}</a>
                 </div>
             </div>
 

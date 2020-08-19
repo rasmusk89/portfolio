@@ -10904,3 +10904,11 @@ a.text-dark:focus {
   }
 }
 
+body {
+  font-size: 1.1rem;
+}
+
+.footer {
+  font-size: 0.8rem;
+}
+

@@ -19,7 +19,7 @@
 
 </div>
 
-<footer class="mt-auto">
+<footer class="mt-auto footer">
     <ul class="text-muted text-center list-unstyled">
         <li>Rasmus Kilk 2020</li>
         <li>+372 55 83 273</li>

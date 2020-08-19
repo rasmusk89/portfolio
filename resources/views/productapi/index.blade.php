@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <a class="btn btn-dark" href="/projects" role="button">{{__('messages.go_back')}}</a>
+    <hr>
     <div class="jumbotron text-center">
         <h1>Product API</h1>
         <p>Description of work</p>
