@@ -34,11 +34,14 @@
                     {{__('messages.projects')}}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/projects">{{__('messages.projects')}}</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/gallery">{{__('messages.photo_gallery')}}</a>
                     <a class="dropdown-item" href="/productapi">{{__('messages.product_api')}}</a>
                     <a class="dropdown-item" href="/contacts">{{__('Contact Book')}}</a>
                 </div>
             </div>
+
         </ul>
     </div>
     <div class="dropdown mr-5">

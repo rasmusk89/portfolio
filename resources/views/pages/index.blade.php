@@ -5,9 +5,9 @@
         <h1>{{$title}}</h1>
         <p>{{$description}}</p>
         <div>
-            <a href="/about" class="btn btn-light btn-sm">About</a>
-            <a href="/contact" class="btn btn-light btn-sm">Contact</a>
-            <a href="/projects" class="btn btn-light btn-sm">Projects</a>
+            <a href="/about" class="btn btn-light btn-sm">{{__('messages.about')}}</a>
+            <a href="/contact" class="btn btn-light btn-sm">{{__('messages.contact')}}</a>
+            <a href="/projects" class="btn btn-light btn-sm">{{__('messages.projects')}}</a>
         </div>
     </div>
 @endsection
