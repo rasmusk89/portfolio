@@ -12,5 +12,6 @@
             <br>Most individual projects I have done are back-end projects and written in PHP using Laravel framework.
             <br>I am currently looking for back-end or PHP developer positions.
         </p>
+        <a class="btn btn-outline-dark btn-lg" href="/contact">Võta ühendust..</a>
     </div>
 @endsection
