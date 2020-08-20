@@ -1,10 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('gallery.include.auth')
-    <a class="btn btn-dark" href="/gallery" role="button">{{__('messages.go_back')}}</a>
+    <div class="custom-background">
+        <a class="btn btn-light" href="/gallery" role="button">{{__('messages.go_back')}}</a>
+    </div>
+    <hr>
+    <div class="custom-background">
+        @include('gallery.include.auth')
+    </div>
     <hr>
     @include('gallery.include.messages')
+    <div class="custom-background">
     <h1>{{$title}}</h1>
     @if (count($albums) > 0)
         <?php
@@ -60,5 +66,6 @@
             <p><em> {{__('messages.login_to_create_album')}}!*</em></p>
         </div>
     @endif
+    </div>
 
 @endsection

@@ -12,20 +12,23 @@
     <link href="sticky-footer.css" rel="stylesheet">
     <title>Rasmus Kilk - {{config('app.name', 'My projects page')}}</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
-@include('include.navbar')
-<div class="container">
-    @yield('content')
-
+<body >
+<div class="background">
+<div class="d-flex flex-column min-vh-100">
+    @include('include.navbar')
+    <div class="container">
+        @yield('content')
+    </div>
+    <footer class="mt-auto footer">
+        <ul class="text-muted text-center list-unstyled">
+            <li>Rasmus Kilk 2020</li>
+            <li>+372 55 83 273</li>
+            <li>rasmuskilk@gmail.com</li>
+        </ul>
+    </footer>
+</div>
 </div>
 
-<footer class="mt-auto footer">
-    <ul class="text-muted text-center list-unstyled">
-        <li>Rasmus Kilk 2020</li>
-        <li>+372 55 83 273</li>
-        <li>rasmuskilk@gmail.com</li>
-    </ul>
-</footer>
 <script src="/js/app.js"></script>
 </body>
 </html>

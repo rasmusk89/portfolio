@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="ml-4 navbar-brand" href="/"><strong>{{__('messages.home')}}</strong></a>
     <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
+        <div class="bg-dark">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item m-1"><a class="nav-link" href="/about">{{__('messages.about')}}</a></li>
                 <li class="nav-item m-1"><a class="nav-link" href="/contact">{{__('messages.contact')}}</a></li>

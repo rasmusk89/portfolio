@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <a class="btn btn-dark" href="/" role="button">{{__('messages.go_back')}}</a>
+    <div class="custom-background">
+        <a class="btn btn-light" href="/" role="button">{{__('messages.go_back')}}</a>
+    </div>
     <hr>
     <div class="jumbotron text-center">
         <h1>{{__('messages.contact_me')}}</h1>
@@ -11,7 +13,8 @@
                 <ul class="text-left">
                     <li>{{__('messages.phone')}}: +372 55 83 273</li>
                     <li>{{__('messages.email')}}: rasmuskilk@gmail.com</li>
-                    <li>LinkedIn: <a target="_blank" href="//www.linkedin.com/in/rasmus-kilk">linkedin.com/in/rasmus-kilk</a></li>
+                    <li>LinkedIn: <a target="_blank" href="//www.linkedin.com/in/rasmus-kilk">linkedin.com/in/rasmus-kilk</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-6">
