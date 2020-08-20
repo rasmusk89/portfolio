@@ -5,7 +5,10 @@
         <a class="btn btn-lg btn-light" href="/gallery" role="button">{{__('messages.go_back')}}</a>
     </div>
     <hr>
-    <div class="container">
+    <div class="custom-background">
+        @include('gallery.include.auth')
+    </div>
+    <div class="container custom-background">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -16,19 +19,20 @@
                             @csrf
 
                             <div class="form-group row">
-                                <label for="email"
-                                       class="col-md-4 col-form-label text-md-right">{{ __('auth.email') }}</label>
-
+                                <label for="login" class="col-sm-4 col-form-label text-md-right">
+                                    {{ __('auth.user_or_email') }}
+                                </label>
                                 <div class="col-md-6">
-                                    <input id="email" type="email"
-                                           class="form-control @error('email') is-invalid @enderror" name="email"
-                                           value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                    <input id="login" type="text"
+                                           class="form-control{{ $errors->has('username') || $errors->has('email') ? ' is-invalid' : '' }}"
+                                           name="login" value="{{ old('username') ?: old('email') }}" required
+                                           autofocus>
 
-                                    @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
+                                    @if ($errors->has('username') || $errors->has('email'))
+                                        <span class="invalid-feedback">
+                                            <strong>{{ $errors->first('username') ?: $errors->first('email') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                             </div>
 
@@ -38,7 +42,8 @@
 
                                 <div class="col-md-6">
                                     <input id="password" type="password"
-                                           class="form-control @error('password') is-invalid @enderror" name="password"
+                                           class="form-control @error('password') is-invalid @enderror"
+                                           name="password"
                                            required autocomplete="current-password">
 
                                     @error('password')

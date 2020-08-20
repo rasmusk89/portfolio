@@ -16,6 +16,8 @@ return [
     'logout' => 'Log out',
     'register' => 'Register',
     'email' => 'E-mail Address',
+    'username' => 'Username',
+    'user_or_email' => 'Username or E-mail',
     'password' => 'Password',
     'remember_me' => 'Remember me',
     'forgot_password' => 'Forgot Your Password?',

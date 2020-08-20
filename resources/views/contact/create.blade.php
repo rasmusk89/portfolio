@@ -5,6 +5,7 @@
         <a class="btn btn-light" href="/" role="button">{{__('messages.go_back')}}</a>
     </div>
     <hr>
+
     <div class="jumbotron text-center">
         <h1>{{__('messages.contact_me')}}</h1>
         <br><br>

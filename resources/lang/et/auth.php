@@ -16,6 +16,8 @@ return [
     'logout' => 'Logi välja',
     'register' => 'Registreeri',
     'email' => 'E-mail Aadress',
+    'username' => 'Kasutajanimi',
+    'user_or_email' => 'Kasutajanimi või E-mail',
     'password' => 'Salasõna',
     'remember_me' => 'Jäta Mind Meelde',
     'forgot_password' => 'Unustasid Oma Salasõna?',
