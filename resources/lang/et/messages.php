@@ -38,9 +38,22 @@ return [
     'photo_uploaded' =>'Foto üles laetud',
     'album_created' => 'Album loodud',
     'album_deleted' => 'Album kustutatud',
-    'go_to' => 'Mine'
-
-
+    'go_to' => 'Mine',
+    'thank_you' => 'Aitäh! Sinu kiri on edastatud!',
+    'name' => 'Nimi',
+    'email' => 'E-mail',
+    'message' => 'Sõnum',
+    'phone' => 'Telefon',
+    'enter_name' => 'Sisesta nimi...',
+    'enter_email' => 'Sisesta e-mail...',
+    'enter_message' => 'Sisesta sõnum...',
+    'send_message' => 'Saada Sõnum',
+    'send_me_message' => 'Saada mulle sõnum',
+    'about_me_text' => 'Minu nimi on Rasmus Kilk ja ma elan Tartus.
+        Hetkel õpin ma kaugõppes IT süsteemide arendust Tallinna Tehnikaülikoolis.
+        Kõige rohkem olen ma tuttav PHP programmeerimiskeelega, kuid tunnen ka Java ning Pythoni keelt.
+        Enamik iseseisvaid projekte on back-end projektid, kirjutatud PHP keeles ning kasutades Laraveli raamistikku.
+        Hetkel olen avatud PHP või back-end arendaja ametikohtadele.'
 
 
 ];

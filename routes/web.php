@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Pages controller
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
-Route::get('/contact', 'PagesController@contact');
+//Route::get('/contact', 'PagesController@contact');
 Route::get('/projects', 'PagesController@projects');
 Route::get('productapi', 'PagesController@productAPI');
 Route::get('wordpress', 'PagesController@wordpress');
@@ -44,3 +44,7 @@ Route::get('lang/{locale}', function ($locale) {
    session()->put('locale', $locale);
    return redirect()->back();
 });
+
+// Contact form controller
+Route::get('contact', 'ContactFormController@create');
+Route::post('contact', 'ContactFormController@store');
