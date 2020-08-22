@@ -10937,3 +10937,12 @@ body {
   opacity: 0.8;
 }
 
+.nav-tabs > li.active > a {
+  color: #808080;
+  font-size: 16px;
+}
+
+.nav-tabs > li > a {
+  color: #242424;
+}
+

@@ -73,7 +73,7 @@
             <li>VUE.JS</li>
         </ul>
         <div class="text-center">
-            <a class="btn bg-light btn-lg mt-5" href="/contact">{{__('messages.contact_me')}}..</a>
+            <a class="btn bg-light btn-lg mt-5 border border-dark" href="/contact">{{__('messages.contact_me')}}..</a>
         </div>
     </div>
 @endsection
