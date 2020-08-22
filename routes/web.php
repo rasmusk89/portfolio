@@ -48,3 +48,7 @@ Route::get('lang/{locale}', function ($locale) {
 // Contact form controller
 Route::get('contact', 'ContactFormController@create');
 Route::post('contact', 'ContactFormController@store');
+
+// Giphy controller
+Route::get('gifs', 'GiphyController@index');
+Route::post('gifs/search', 'GiphyController@search');

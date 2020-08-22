@@ -10,15 +10,16 @@
         <h1>{{__('messages.contact_me')}}</h1>
         <br><br>
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 order-sm-1">
                 <ul class="text-left">
                     <li>{{__('messages.phone')}}: +372 55 83 273</li>
                     <li>{{__('messages.email')}}: rasmuskilk@gmail.com</li>
                     <li>LinkedIn: <a target="_blank" href="//www.linkedin.com/in/rasmus-kilk">linkedin.com/in/rasmus-kilk</a>
                     </li>
                 </ul>
+                <br>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 order-sm-12">
                 @include('gallery.include.messages')
                 <h4 class="mb-2">{{__('messages.send_me_message')}}</h4>
                 <hr>

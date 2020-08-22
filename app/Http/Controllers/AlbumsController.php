@@ -17,8 +17,6 @@ class AlbumsController extends Controller
             'title' => __('messages.albums'),
             'albums' => Album::with('Photos')->get()
         ];
-//        $title = 'Albums';
-//        $album = Album::with('Photos')->get();
         return view('gallery.albums')->with($data);
     }
 

@@ -12,7 +12,8 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item m-1"><a class="nav-link" href="/gallery">&nbsp;&nbsp;{{__('messages.photo_gallery')}}</a></li>
                 <li class="nav-item m-1"><a class="nav-link" href="/productapi">&nbsp;&nbsp;{{__('messages.product_api')}}</a></li>
-                <li class="nav-item m-1"><a class="nav-link" href="/contacts">&nbsp;&nbsp;{{__('Contact Book')}}</a></li>
+                <li class="nav-item m-1"><a class="nav-link" href="/contacts">&nbsp;&nbsp;{{__('messages.contact_book')}}</a></li>
+                <li class="nav-item m-1"><a class="nav-link" href="/gifs">&nbsp;&nbsp;{{__('messages.gifs')}}</a></li>
             </ul>
         </div>
     </div>
@@ -38,7 +39,8 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/gallery">&bull;&nbsp;&nbsp;{{__('messages.photo_gallery')}}</a>
                     <a class="dropdown-item" href="/productapi">&bull;&nbsp;&nbsp;{{__('messages.product_api')}}</a>
-                    <a class="dropdown-item" href="/contacts">&bull;&nbsp;&nbsp;{{__('Contact Book')}}</a>
+                    <a class="dropdown-item" href="/contacts">&bull;&nbsp;&nbsp;{{__('messages.contact_book')}}</a>
+                    <a class="dropdown-item" href="/gifs">&bull;&nbsp;&nbsp;{{__('messages.gifs')}}</a>
                 </div>
             </div>
 

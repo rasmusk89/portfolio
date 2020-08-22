@@ -16,6 +16,8 @@ return [
     'photo_gallery' => 'Photo Gallery',
     'product_api' => 'Product API',
     'wordpress' => 'Wordpress page',
+    'contact_book' => 'Contact Book',
+    'countries' => 'Countries',
     'no_albums' => 'No albums to display',
     'no_photos' => 'No photos to display',
     'login_to_create_album' => 'Log in to create an album',
@@ -53,7 +55,13 @@ return [
         I am currently distant studying IT systems development at Tallinn University of Technology.
         I am most familiar with PHP programming language but I also know Java and Python.
         Most individual projects I have done are back-end projects and written in PHP using Laravel framework.
-        I am currently looking for back-end or PHP developer positions.'
-
-
+        I am currently looking for back-end or PHP developer positions.',
+    'gifs' => 'Funny gifs',
+    'desc_gifs' => 'Search for funny GIFs',
+    'search' => 'Search',
+    'search_desc' => 'Search for GIFs..',
+    'how_many' => 'How many GIFs',
+    'one' => 'One',
+    'five' => 'Five',
+    'ten' => 'Ten',
 ];

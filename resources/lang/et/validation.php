@@ -45,14 +45,14 @@ return [
     'file' => 'The :attribute must be a file.',
     'filled' => 'The :attribute field must have a value.',
     'gt' => [
-        'numeric' => 'The :attribute must be greater than :value.',
-        'file' => 'The :attribute must be greater than :value kilobytes.',
+        'numeric' => ':attribute must be greater than :value.',
+        'file' => ':attribute ei tohi olla suurem kui :value kilobaiti.',
         'string' => 'The :attribute must be greater than :value characters.',
         'array' => 'The :attribute must have more than :value items.',
     ],
     'gte' => [
         'numeric' => 'The :attribute must be greater than or equal :value.',
-        'file' => 'The :attribute must be greater than or equal :value kilobytes.',
+        'file' => ':attribute ei tohi olla suurem kui :value kilobaiti.',
         'string' => 'The :attribute must be greater than or equal :value characters.',
         'array' => 'The :attribute must have :value items or more.',
     ],
@@ -78,7 +78,7 @@ return [
     ],
     'max' => [
         'numeric' => 'The :attribute may not be greater than :max.',
-        'file' => 'The :attribute may not be greater than :max kilobytes.',
+        'file' => ':attribute ei tohi olla suurem kui :max kilobaiti.',
         'string' => 'The :attribute may not be greater than :max characters.',
         'array' => 'The :attribute may not have more than :max items.',
     ],
@@ -96,7 +96,7 @@ return [
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => 'The :attribute field is required.',
+    'required' => 'Väli :attribute on nõutud.',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
@@ -130,8 +130,9 @@ return [
     */
 
     'custom' => [
-        'title' => 'Title',
-        'photo' => 'Photo',
+        'attribute-name' => [
+            'rule-name' => 'custom-message',
+        ],
     ],
 
     /*
@@ -146,11 +147,11 @@ return [
     */
 
     'attributes' => [
-        'title' => 'title',
-        'photo' => 'photo',
-        'name' => 'name',
+        'title' => 'pealkiri',
+        'photo' => 'foto',
+        'name' => 'nimi',
         'email' => 'email',
-        'message' => 'message',
+        'message' => 'sõnum',
     ],
 
 ];

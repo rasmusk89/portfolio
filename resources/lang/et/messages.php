@@ -15,7 +15,9 @@ return [
     'contact_me' => 'Võta ühendust',
     'photo_gallery' => 'Foto Galerii',
     'product_api' => 'Toote API',
+    'contact_book' => 'Kontaktiraamat',
     'wordpress' => 'Wordpress lehekülg',
+    'countries' => 'Riigid',
     'no_albums' => 'Albumid puuduvad',
     'no_photos' => 'Pildid puuduvad',
     'login_to_create_album' => 'Logi sisse, et luua uus album',
@@ -53,7 +55,16 @@ return [
         Hetkel õpin ma kaugõppes IT süsteemide arendust Tallinna Tehnikaülikoolis.
         Kõige rohkem olen ma tuttav PHP programmeerimiskeelega, kuid tunnen ka Java ning Pythoni keelt.
         Enamik iseseisvaid projekte on back-end projektid, kirjutatud PHP keeles ning kasutades Laraveli raamistikku.
-        Hetkel olen avatud PHP või back-end arendaja ametikohtadele.'
+        Hetkel olen avatud PHP või back-end arendaja ametikohtadele.',
+    'gifs' => 'Naljakad GIF\'id',
+    'desc_gifs' => 'Leia naljakaid GIF\'e',
+    'search' => 'Otsi',
+    'search_desc' => 'Otsi GIF\'e',
+    'how_many' => 'Mitu GIFi',
+    'one' => 'Üks',
+    'five' => 'Viis',
+    'ten' => 'Kümme',
+
 
 
 ];
