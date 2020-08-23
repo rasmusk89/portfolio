@@ -2,13 +2,12 @@
 
 @section('content')
     <div class="custom-background">
-        <a class="btn btn-light border border-secondary" href="/gallery/albums" role="button">{{__('messages.go_back')}}</a>
-    </div>
-    <hr>
-    <div class="custom-background">
         @include('gallery.include.auth')
     </div>
     <hr>
+    <div class="custom-background">
+        <a class="btn btn-light border border-secondary" href="/gallery/albums" role="button">{{__('messages.go_back')}}</a>
+    </div>
     <div class="custom-background">
         @include('gallery.include.messages')
         <h1>{{$album->name}}</h1>

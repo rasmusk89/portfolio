@@ -2,16 +2,14 @@
 
 @section('content')
     <div class="custom-background">
-        <a class="btn btn-light border border-secondary" href="/projects" role="button">{{__('messages.go_back')}}</a>
-    </div>
-    <hr>
-    <div class="custom-background">
         @include('gallery.include.auth')
         @if (!Auth::check())
-            <small><em>{{__('projects.guest_login')}}</em></small>
         @endif
     </div>
     <hr>
+    <div class="custom-background">
+        <a class="btn btn-light border border-secondary" href="/projects" role="button">{{__('messages.go_back')}}</a>
+    </div>
     <div class="jumbotron text-center">
         <h1>{{__('messages.photo_gallery')}}</h1>
         <p>{{__('projects.photo_gallery_description')}}</p>

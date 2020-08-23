@@ -2,11 +2,11 @@
 
 @section('content')
     <div class="custom-background">
-        <a class="btn btn-lg btn-light border border-secondary" href="/gallery" role="button">{{ __('messages.go_back') }}</a>
+        @include('gallery.include.auth')
     </div>
     <hr>
     <div class="custom-background">
-        @include('gallery.include.auth')
+        <a class="btn btn-light border border-secondary" href="/gallery" role="button">{{ __('messages.go_back') }}</a>
     </div>
     <div class="container custom-background">
         <div class="row justify-content-center">

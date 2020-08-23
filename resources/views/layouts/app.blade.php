@@ -8,9 +8,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{asset('css/app.css?v=').time()}}">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-{{--    <link rel="icon" href="{{ URL::asset('favicon1.png') }}" type="image/x-icon"/>--}}
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <title>Rasmus Kilk - {{config('app.name', 'My projects page')}}</title>
+    <meta property="og:title" content="Rasmus Kilk portfolio page" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://tinyurl.com/y6mqrn26" />
+    <meta property="og:url" content="https://www.rasmusk.ee" />
 </head>
 <body >
 <div class="background">
