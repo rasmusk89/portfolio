@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="custom-background">
-        <a class="btn btn-lg btn-light" href="/gallery" role="button">{{ __('messages.go_back') }}</a>
+        <a class="btn btn-lg btn-light border border-secondary" href="/gallery" role="button">{{ __('messages.go_back') }}</a>
     </div>
     <hr>
     <div class="custom-background">

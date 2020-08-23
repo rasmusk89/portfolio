@@ -34,8 +34,11 @@ class PagesController extends Controller
     }
 
     public function projects() {
-        $title = __('messages.projects');
-        return view('pages.projects')->with('title', $title);
+        $data = [
+            'title' => __('messages.projects'),
+            'description' => __('messages.projects_description')
+        ];
+        return view('pages.projects')->with($data);
     }
 
     public function contacts() {

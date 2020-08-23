@@ -1,6 +1,9 @@
 <template>
     <div>
-        <h1>Add Contact</h1>
+        <h1>Contacts (VUE.JS)</h1>
+        <p>This is a work in progress contact book project where you can add, view, edit and delete contacts. It
+            was created using Laravel framework on back-end and VUE.JS on front-end.</p>
+        <h2>Add Contact</h2>
         <form action="#" @submit.prevent="edit ? updateContact(contact.id) : createContact()">
             <div class="form-group">
                 <label>Name</label>

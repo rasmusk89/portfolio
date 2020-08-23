@@ -10916,33 +10916,41 @@ body {
 }
 
 .footer {
-  background-color: rgba(232, 250, 255, 0.9);
+  background-color: rgba(240, 240, 240, 0.95);
   padding-top: 1em;
   font-size: 0.8rem;
   border-top: #c2c2c2 1px solid;
 }
 
 .jumbotron {
-  background-color: rgba(232, 250, 255, 0.8);
+  background-color: rgba(240, 240, 240, 0.8);
+  border-radius: 0 !important;
 }
 
 .custom-background {
-  background-color: rgba(232, 250, 255, 0.8);
+  background-color: rgba(240, 240, 240, 0.8);
   padding: 0.5em;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 .project-list {
-  background-color: rgba(232, 250, 255, 0.8);
+  background-color: rgba(240, 240, 240, 0.8);
   opacity: 0.8;
 }
 
-.nav-tabs > li.active > a {
-  color: #808080;
-  font-size: 16px;
+.btn:hover {
+  transform: scale(1.1, 1.1);
 }
 
-.nav-tabs > li > a {
-  color: #242424;
+.btn {
+  border-radius: 0 !important;
+}
+
+.image_in_album:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.language {
+  pointer-events: none;
 }
 

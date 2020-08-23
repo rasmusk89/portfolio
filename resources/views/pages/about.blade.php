@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="custom-background">
-        <a class="btn btn-light" href="/" role="button">{{__('messages.go_back')}}</a>
+        <a class="btn btn-light border border-secondary" href="/" role="button">{{__('messages.go_back')}}</a>
     </div>
     <hr>
     <div class="jumbotron text-center">
@@ -13,53 +13,52 @@
             </div>
             <div class="col-md-6 order-lg-1 order-sm-12 align-self-center">
                 <ul class="list-unstyled">
-                    <li><strong>Nimi</strong>: Rasmus Kilk</li>
-                    <li><strong>Elukoht</strong>: Tartu, Eesti</li>
+                    <li><strong>{{__('about.name')}}</strong>: Rasmus Kilk</li>
+                    <li><strong>{{__('about.location')}}</strong>: Tartu, Eesti</li>
                 </ul>
             </div>
 
         </div>
-        <h3>Haridus</h3>
+        <h3>{{__('about.education')}}</h3>
         <div class="border border-bottom border-dark"></div>
         <ul class="list-unstyled">
             <li>
-                &nbsp;<strong>Tallinna Tehnikaülikool</strong><br>
+                &nbsp;<strong>{{__('about.university')}}</strong><br>
+                <em>{{__('about.distant')}}</em><br>
                 &nbsp;2019 -<br>
-                &nbsp;IT süsteemide arendamise eriala kaugõppena<br>
+                &nbsp;{{__('about.field')}}<br>
             </li>
             <hr>
             <li>
                 &nbsp;<strong>Kose Gümnaasium</strong><br>
                 &nbsp;2006 - 2009<br>
-                &nbsp;Keskharidus<br>
+                &nbsp;{{__('about.secondary')}}<br>
             </li>
             <hr>
             <li>
                 &nbsp;<strong>Roosna-Alliku Põhikool</strong><br>
                 &nbsp;1997 - 2006<br>
-                &nbsp;Põhiharidus<br>
+                &nbsp;{{__('about.basic')}}<br>
             </li>
             <br>
-            <h3>Koolitused</h3>
+            <h3>{{__('about.certificates')}}</h3>
             <div class="border border-bottom border-dark"></div>
             <li>
-                <strong>Tarkvaraarenduse Front-End</strong><br>
-                &nbsp;IT Koolitus<br>
-                &nbsp;Mai 2019<br>
-                &nbsp;72 akadeemilist tundi<br>
+                <strong>{{__('about.front_end')}}</strong><br>
+                &nbsp;IT Koolitus - 2019<br>
+                &nbsp;72 {{__('about.academical_hours')}}<br>
                 &nbsp;<em>Git, HTML, CSS, JavaScript, DOM, JSON, AJAX, unit test, SEO</em><br>
             </li>
             <hr>
             <li>
-                <strong>IT-Spetsialisti/arvutitarkvara hooldaja kesktaseme koolitus</strong><br>
-                &nbsp;N.O.R.T Koolitus<br>
-                &nbsp;Oktoober 2018<br>
-                &nbsp;40 akadeemilist tundi<br>
-                &nbsp;<em>Riistvara, tarkvara, võrk ja veeb, turvalisus, pilveteenused</em><br>
+                <strong>{{__('about.it_specialist')}}</strong><br>
+                &nbsp;N.O.R.T Koolitus - 2018<br>
+                &nbsp;40 {{__('about.academical_hours')}}<br>
+                &nbsp;<em>{{__('about.hardware')}}</em><br>
             </li>
             <br>
         </ul>
-        <h3>Oskused</h3>
+        <h3>{{__('about.skills')}}</h3>
         <div class="border border-bottom border-dark"></div>
         <ul class="text-center list-unstyled">
             <li>PHP</li>
@@ -71,6 +70,7 @@
             <li>Laravel</li>
             <li>REST API</li>
             <li>VUE.JS</li>
+            <li>Wordpress</li>
         </ul>
         <div class="text-center">
             <a class="btn bg-light btn-lg mt-5 border border-dark" href="/contact">{{__('messages.contact_me')}}..</a>

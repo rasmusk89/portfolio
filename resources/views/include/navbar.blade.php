@@ -23,10 +23,11 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item {{ Request::is('projects') ? 'active' : '' }}" href="/projects">{{__('messages.projects')}}</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item {{ Request::is('gallery') ? 'active' : '' }}" href="/gallery">{{__('messages.photo_gallery')}}</a>
-                    <a class="dropdown-item {{ Request::is('productapi') ? 'active' : '' }}" href="/productapi">{{__('messages.product_api')}}</a>
-                    <a class="dropdown-item {{ Request::is('contacts') ? 'active' : '' }}" href="/contacts">{{__('messages.contacts')}}</a>
-                    <a class="dropdown-item {{ Request::is('gifs') ? 'active' : '' }}" href="/gifs">{{__('messages.gifs')}}</a>
+                    <a class="dropdown-item {{ Request::is('gallery') ? 'active' : '' }}" href="/gallery">{{__('projects.photo_gallery')}}</a>
+                    <a class="dropdown-item {{ Request::is('productapi') ? 'active' : '' }}" href="/productapi">{{__('projects.product_api')}}</a>
+                    <a class="dropdown-item {{ Request::is('contacts') ? 'active' : '' }}" href="/contacts">{{__('projects.contact_book')}}</a>
+                    <a class="dropdown-item {{ Request::is('gifs') ? 'active' : '' }}" href="/gifs">{{__('projects.gifs')}}</a>
+                    <a class="dropdown-item {{ Request::is('contacts_school') ? 'active' : '' }}" href="/contacts_school">{{__('projects.contacts_school_project')}}</a>
                 </div>
             </li>
         </ul>
@@ -40,13 +41,13 @@
         </button>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
             <a href="/lang/en">
-                <div class="dropdown-item btn btn-sm btn-light">
+                <div class="dropdown-item btn btn-sm btn-light language">
                     <img class="mr-1" src="/storage/flags/engFlag.png" alt="English flag"
                          height="20px"><strong>ENG</strong></div>
             </a>
             <div class="dropdown-divider"></div>
             <a href="/lang/et">
-                <div class="dropdown-item btn btn-sm btn-light">
+                <div class="dropdown-item btn btn-sm btn-light language">
                     <img class="mr-1" src="/storage/flags/estFlag.png" alt="Estonian flag"
                          height="20px"><strong>EST</strong></div>
             </a>

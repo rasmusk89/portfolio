@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="custom-background">
-        <a class="btn btn-light" href="/gallery/albums" role="button">{{__('messages.go_back')}}</a>
+        <a class="btn btn-light border border-secondary" href="/gallery/albums" role="button">{{__('messages.go_back')}}</a>
     </div>
     <hr>
     <div class="custom-background">
@@ -23,16 +23,16 @@
                 <div class="row text-center">
                     @foreach($album->photos as $photo)
                         @if ($i == $colcount)
-                            <div class="col-md-4">
+                            <div class="col-md-4 image_in_album">
                                 <a href="/gallery/photos/{{$photo->id}}">
-                                    <img class="img-fluid m-2 p-3"
+                                    <img class="img-fluid m-2 border border-light" style="width: 15em; max-height: 15em"
                                          src="{{ URL::asset("storage/photos/{$photo->album_id}/{$photo->photo}") }}"
                                          alt="{{$photo->title}}">
                                 </a>
                                 @else
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 image_in_album">
                                         <a href="/gallery/photos/{{$photo->id}}">
-                                            <img class="img-fluid m-2 p-3"
+                                            <img class="img-fluid m-2 border border-light" style="width: 15em; max-height: 15em"
                                                  src="{{ URL::asset("storage/photos/{$photo->album_id}/{$photo->photo}") }}"
                                                  alt="{{$photo->title}}">
                                             <br>

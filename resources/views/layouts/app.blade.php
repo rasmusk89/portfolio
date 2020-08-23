@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css?v=').time()}}">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+{{--    <link rel="icon" href="{{ URL::asset('favicon1.png') }}" type="image/x-icon"/>--}}
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <title>Rasmus Kilk - {{config('app.name', 'My projects page')}}</title>
 </head>
@@ -27,7 +28,7 @@
     </footer>
 </div>
 </div>
-<script src="/js/app.js"></script>
+<script src={{ asset('js/app.js') }}></script>
 </body>
 </html>
 

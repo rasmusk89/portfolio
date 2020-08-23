@@ -52,3 +52,6 @@ Route::post('contact', 'ContactFormController@store');
 // Giphy controller
 Route::get('gifs', 'GiphyController@index');
 Route::post('gifs/search', 'GiphyController@search');
+
+// Contacts school controller
+Route::get('contacts_school', 'ContactsSchoolController@index');

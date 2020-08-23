@@ -12,7 +12,7 @@ return [
     'contact' => 'Kontakt',
     'projects' => 'Projektid',
     'about_me' => 'Minust',
-    'contact_me' => 'Võta ühendust',
+    'contact_me' => 'Võta ühendust ja küsi lisa',
     'photo_gallery' => 'Foto Galerii',
     'product_api' => 'Toote API',
     'contact_book' => 'Kontaktiraamat',
@@ -56,7 +56,7 @@ return [
         Kõige rohkem olen ma tuttav PHP programmeerimiskeelega, kuid tunnen ka Java ning Pythoni keelt.
         Enamik iseseisvaid projekte on back-end projektid, kirjutatud PHP keeles ning kasutades Laraveli raamistikku.
         Hetkel olen avatud PHP või back-end arendaja ametikohtadele.',
-    'gifs' => 'Naljakad GIF\'id',
+    'gifs' => 'GIF\'id (API)',
     'desc_gifs' => 'Leia naljakaid GIF\'e',
     'search' => 'Otsi',
     'search_desc' => 'Otsi GIF\'e',
@@ -64,6 +64,11 @@ return [
     'one' => 'Üks',
     'five' => 'Viis',
     'ten' => 'Kümme',
+    'projects_description' => 'Siin saab näha minu projekte ning siia lisan ka uusi töid.',
+    'cover_image' => 'kaanepilt',
+    'view' => 'Vaata',
+
+
 
 
 

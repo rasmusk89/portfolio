@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="custom-background">
-        <a class="btn btn-light" href="/" role="button">{{__('messages.go_back')}}</a>
+        <a class="btn btn-light border border-secondary" href="/" role="button">{{__('messages.go_back')}}</a>
     </div>
     <hr>
 
     <div class="jumbotron text-center">
-        <h1>{{__('messages.contact_me')}}</h1>
+        <h1>{{__('messages.contact')}}</h1>
         <br><br>
         <div class="row">
             <div class="col-md-6 order-sm-1">

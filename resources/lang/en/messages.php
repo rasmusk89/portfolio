@@ -12,7 +12,7 @@ return [
     'contact' => 'Contact',
     'projects' => 'Projects',
     'about_me' => 'About me',
-    'contact_me' => 'Contact me',
+    'contact_me' => 'Contact me and ask for more',
     'photo_gallery' => 'Photo Gallery',
     'product_api' => 'Product API',
     'wordpress' => 'Wordpress page',
@@ -31,6 +31,7 @@ return [
     'description' => 'Description',
     'choose_photo' => 'Choose a photo',
     'choose_cover_image' => 'Choose a cover image',
+    'cover_image' => 'Cover image',
     'submit' => 'Submit',
     'no_files_chosen' => 'No files chosen',
     'optional' => 'Optional',
@@ -56,7 +57,7 @@ return [
         I am most familiar with PHP programming language but I also know Java and Python.
         Most individual projects I have done are back-end projects and written in PHP using Laravel framework.
         I am currently looking for back-end or PHP developer positions.',
-    'gifs' => 'Funny gifs',
+    'gifs' => 'Gif\'s (API)',
     'desc_gifs' => 'Search for funny GIFs',
     'search' => 'Search',
     'search_desc' => 'Search for GIFs..',
@@ -64,4 +65,6 @@ return [
     'one' => 'One',
     'five' => 'Five',
     'ten' => 'Ten',
+    'projects_description' => 'Here are my projects and this is where I add my new projects.',
+    'view' => 'View',
 ];

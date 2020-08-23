@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="custom-background">
-        <a class="btn btn-light" href="/gallery" role="button">{{__('messages.go_back')}}</a>
+        <a class="btn btn-light border border-secondary" href="/gallery" role="button">{{__('messages.go_back')}}</a>
     </div>
     <hr>
     <div class="custom-background">
@@ -59,7 +59,7 @@
     @endif
     @if (Auth::check())
         <div>
-            <a class="btn btn-primary" href="/gallery/create">{{__('messages.create_album')}}</a>
+            <a class="btn btn-primary m-2" href="/gallery/create">{{__('messages.create_album')}}</a>
         </div>
     @else
         <div>

@@ -6,10 +6,13 @@
     </div>
     <hr>
     <div class="jumbotron text-center">
-        <h1>Product API</h1>
-        <p>Description of work</p>
+        <h1>{{__('projects.product_api')}}</h1>
+        <p>{{__('projects.product_api_description')}}</p>
         <a href="//rasmusk.ee/productAPI" target="_blank" class="text-decoration-none">
-            <div class="btn btn-dark">{{__('messages.go_to')}}..</div>
+            <div class="btn btn-dark m-2">{{__('messages.view')}}..</div>
+        </a>
+        <a href="https://github.com/rasmusk89/TestWork" target="_blank" class="text-decoration-none">
+            <div class="btn btn-dark m-2">GitHub..</div>
         </a>
     </div>
 @endsection

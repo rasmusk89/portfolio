@@ -10,16 +10,18 @@ use function Sodium\compare;
 class GiphyController extends Controller
 {
 
-    public function index() {
+    public function index()
+    {
         $data = [
             'title' => __('messages.gifs'),
-            'description' => __('messages.desc_gifs'),
+            'notFound' => '',
             'images' => array(),
         ];
         return view('gifs.index')->with($data);
     }
 
-    public function search(Request $request) {
+    public function search(Request $request)
+    {
         $value = $request['search'];
         $perPage = $request['limit'];
 
@@ -35,9 +37,9 @@ class GiphyController extends Controller
 
         $data = [
             'title' => __('messages.gifs'),
-            'description' => __('messages.desc_gifs'),
             'images' => $images,
         ];
+
         return view('gifs.index')->with($data);
     }
 }
